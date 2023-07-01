@@ -6,7 +6,7 @@ const GenreSkeleton = () => {
   return (
     <List>
       {skeletons.map((skeleton) => (
-        <HStack>
+        <HStack key={skeleton}>
           <Skeleton boxSize='32px' borderRadius={8} />
           <SkeletonText fontSize='lg'></SkeletonText>
         </HStack>
